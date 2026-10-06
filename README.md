@@ -6,6 +6,22 @@ I enjoy building software across AI, full-stack development, iOS, and robotics, 
 
 ## Featured Projects
 
+### 🧠 Transformer Visualizer
+
+Built a GPT-style transformer from scratch in PyTorch, then created an interactive web visualizer and optimized inference using vLLM, KV caching, GPTQ quantization, ONNX, and Triton.
+
+- Implemented attention, multi-head attention, MLPs, LayerNorm, residual connections, and generation from scratch
+- Built an interactive Next.js visualizer with live attention heatmaps and token probabilities
+- Ported the model to vLLM and benchmarked latency, throughput, and memory behavior
+- Achieved 25× batching throughput, 3.7× model-size reduction with INT4 quantization, and 3.7× CPU KV-cache speedup
+- Wrote and benchmarked a custom fused Triton LayerNorm kernel
+
+**Tech:** PyTorch · Triton · vLLM · ONNX · Next.js · TypeScript · GPTQ
+
+[View Project](https://github.com/VarunKollipara/transformer-visualizer)
+
+---
+
 ### 🤖 Agentic QA Scenario Generator
 
 An AI-powered application that converts requirements documents into structured software test suites and lets users refine results through text or voice.
